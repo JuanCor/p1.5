@@ -387,7 +387,7 @@ public String add(HttpServletRequest request, Model model, HttpServletResponse r
 }
 
 
-@RequestMapping(value="/Carrito", method= {RequestMethod.GET, RequestMethod.POST})
+@RequestMapping(value="/carrito", method= {RequestMethod.GET, RequestMethod.POST})
 public String carrito(HttpServletRequest request, Model model, HttpServletResponse resp) {
 	String url="";
 	int cantidad1=0, cantidad2=0, cantidad3=0;
@@ -403,11 +403,11 @@ public String carrito(HttpServletRequest request, Model model, HttpServletRespon
 		model.addAttribute("Cantidad3", cantidad3);
 		url="carritoCompra";
 		
-		/*
+		
 		url = "listaArticulos";
 		List <DTOArticulos> listaArticulos = dao2.leeArticulos();
 		model.addAttribute("listaArticulos", listaArticulos);
-		*/
+		
 	}else {
 	
 		url="carritoCompra";
