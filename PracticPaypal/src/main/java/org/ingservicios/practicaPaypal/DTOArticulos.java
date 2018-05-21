@@ -10,9 +10,6 @@ public class DTOArticulos implements Serializable{
 		private float precio;
 		private int codigo;
 		
-		
-		
-		
 		public DTOArticulos() {
 			nombre="";
 			precio=0;
@@ -26,8 +23,6 @@ public class DTOArticulos implements Serializable{
 
 			
 		}
-		
-		
 
 		public String getNombre() {
 			return nombre;

@@ -16,7 +16,6 @@
 <input type=submit value=sigueComprando></form>
 </c:if>
 
-
 <c:if test= "${Cantidad1 > 0 || Cantidad2 > 0 || Cantidad3 > 0}" >
  <p>Sus artículos elegidos son: </p>
  <c:if test="${Cantidad1 >0}">
@@ -35,7 +34,7 @@
  <p>El valor de cada artículo es: ${Precio3}</p>
  </c:if>
  
-<p>Su cantidad a pagar en euros son:  ${Suma}</p>
+<p>Su cantidad a pagar en euros es:  ${Suma}</p>
 
 <!-- Boton que cancela el pago total -->
 <form action="cancelaSuma" method=post>
@@ -53,7 +52,6 @@
 <img alt="" border="0" src="https://www.sandbox.paypal.com/es_ES/i/scr/pixel.gif" width="1" height="1">
 </form>
 </c:if>
-
 
 </body>
 </html>

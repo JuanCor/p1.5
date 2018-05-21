@@ -386,7 +386,6 @@ public String add(HttpServletRequest request, Model model, HttpServletResponse r
 	return "listaArticulos";
 }
 
-
 @RequestMapping(value="/carrito", method= {RequestMethod.GET, RequestMethod.POST})
 public String carrito(HttpServletRequest request, Model model, HttpServletResponse resp) {
 	String url="";
@@ -432,8 +431,7 @@ public String carrito(HttpServletRequest request, Model model, HttpServletRespon
 			cantidad3 = itemsGuardados[pos];
 			//int cantidad = itemsGuardados.get(pos);
 			precio3 = dao2.buscaArticulo(pos).getPrecio();
-			sumaTotal=  (cantidad1*precio1)+(cantidad2*precio2)+(cantidad3*precio3);
-			
+			sumaTotal=  (cantidad1*precio1)+(cantidad2*precio2)+(cantidad3*precio3);			
 		}
 	}
 	
@@ -449,7 +447,6 @@ public String carrito(HttpServletRequest request, Model model, HttpServletRespon
 	return url;
 }
 
-
 @RequestMapping(value="/sigueComprando", method= {RequestMethod.GET, RequestMethod.POST})
 public String sigueComprando(HttpServletRequest request, Model model, HttpServletResponse resp) {
 	
@@ -460,8 +457,6 @@ public String sigueComprando(HttpServletRequest request, Model model, HttpServle
 	return "listaArticulos";
 	
 }
-
-
 
 @RequestMapping(value="/cancelaSuma", method= {RequestMethod.GET, RequestMethod.POST})
 public String cancelaSuma(HttpServletRequest request, Model model, HttpServletResponse resp) {

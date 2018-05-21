@@ -7,7 +7,7 @@
 <title>Practica1.5</title>
 </head>
 <body>
-<h1>Bienvenido a la practica1.5 Paypal</h1>
+<h3>Bienvenido a la practica1.5 Paypal</h3>
 <h2>Control de acceso</h2>
 <form action="Servlet1" method=post>
 Name: <input type=text name=username>
